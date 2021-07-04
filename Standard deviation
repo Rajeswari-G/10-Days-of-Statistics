@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a[100],i,j,n;
+    float k=0,s=0,mean=0,sd,e=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        s+=a[i];
+    }
+    mean=s/n;
+    for(i=0;i<n;i++)
+    {
+        k=a[i]-mean;
+        e=e+ (k*k);
+    }
+    sd=sqrt(e/n);
+    printf("%.1f",sd);
+    return 0;
+}
