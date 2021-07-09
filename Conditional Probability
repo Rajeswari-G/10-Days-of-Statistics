@@ -1,0 +1,12 @@
+Suppose a family has 2 children, one of which is a boy. What is the probability that both children are boys?
+
+
+
+Probabilities = BB,BG,GB,GG
+The order should matter to make it 1/2, rather than 1/3.
+
+First is a boy. If order matters, then you can eliminate choices GG and GB from the matrix, thus giving you 1/2 probability.
+
+If order doesn't matter (but we still know there is already at least 1 boy), then we still have 3 possibilities: BB, BG, GB.
+
+Answer" 1/3 
